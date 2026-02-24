@@ -287,16 +287,15 @@ body {
   .hamburger { right: 12px; top: 10px; font-size: 20px; } 
   .nav-menu { right: 12px; min-width: 160px; }
   .about-image .about-video { max-width:560px; }}
-
 @media(max-width:768px){
 .main-frame{padding:2rem 1rem;height:auto;}
-.frame-inner{grid-template-columns:1fr;text-align:center;gap:10px;padding:0;}
+.frame-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:0;}
 
 .logo-wrap{order:1;display:flex;justify-content:center;margin:0 auto 0.5rem auto;padding:0;}
-.logo-wrap .logo-img{height:180px;width:auto;margin:0 auto;display:block;}
+.logo-wrap .logo-img{height:200px;width:auto;margin:0 auto;display:block;}
 
-.center-content{order:2;padding:0;}
-.center-content .center-inner{transform:none;padding:0;}
+.center-content{order:2;padding:0;width:100%;}
+.center-content .center-inner{transform:none;padding:0;margin:0 auto;}
 
 .center-content .site-title{text-align:center;font-size:3rem;margin:0.5rem auto;line-height:1.1;}
 .center-content .site-slogan{text-align:center;font-size:1.4rem;max-width:90%;margin:0.3rem auto 1rem auto;}
@@ -347,6 +346,7 @@ body {
   overflow:hidden; 
   clip:rect(1px,1px,1px,1px); 
   white-space:nowrap; }
+
 
 
 
